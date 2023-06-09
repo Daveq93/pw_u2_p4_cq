@@ -11,9 +11,26 @@
         <header></header>
         <nav></nav>
         <section>
-            <div id="myApp"></div>
-            <script></script>
+            <h1>Inicio</h1>
+            <p>{{1+1}}</p>
+            <div id="myApp">
+                <p>{{1+1}}</p>
+                <p>{{true}}</p>
+                <p>{{!true?'Activo':'Inactivo'}}</p>
+           
+                <h4>Nombre</h4>
+                <h4>{{nombre}}</h4>
+                <h4>Apellido</h4>
+                <h4>{{apellido}}</h4>
+                <h4>Mensaje</h4>
+                <h4>{{mensaje}}</h4>
 
+                <button v-on:click="cambiarNombre()">Cambiar nombre</button>
+                <button v-on:click="cambiarApellido()">Cambiar apellido</button>
+           
+            </div>
+            <script></script>
+            <h2>fin</h2>
         </section>
         <footer></footer>
 
