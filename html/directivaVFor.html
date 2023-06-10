@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
-   <nav></nav>
-   <section>
- 
-    <div id="myApp2"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <section>
 
-   </section>
-   <footer></footer>
-   <script src="../js/vfor.js"> </script>
-</body>
+            <div id="myApp2">
+                <h4>Estudiantes UCE</h4>
+                <input type="text" v-model="nombre" v-on:keypress.enter="agregarEstudiante2">
+                                                               <!--El .enter controla directamente el enter-->
+                <h1>{{nombre}}</h1>
+                
+                <hr>
+                <h1>Lista de estudiantes</h1>
+
+                <!-- <ul>
+                    
+                    <li>{{arreglo}}</li>
+                    <li>{{arreglo[0]}}</li>
+                    <li>{{arreglo[9]}}</li>
+              
+
+                </ul> -->
+
+                <ul>
+                    <!-- <li v-for="estudiante in arreglo">-->
+                    <!--  <li v-for="{nombre,apellido} in arreglo">
+                        <span>{{nombre}}</span>
+                        <blockquote>{{apellido}}</blockquote>
+                    </li>-->
+                    <li v-for="(estudiante, index) in arreglo">
+                        <span>{{index}}--{{estudiante.nombre}}</span>
+                        <blockquote>{{estudiante.apellido}}</blockquote>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer></footer>
+        <script src="../js/vfor.js"> </script>
+    </body>
 </html>

@@ -20,8 +20,15 @@ Las propiedades reactivas sirven para manejar un modelo
 
 
 # Directivas
+Permite agilizar el desarrollo, el navegador toma las directivas y las transforma a html
+
 1) para los eventos se conoce  como v-on
     this se necesita dentro de JS, no en HTML
+2) v-for   sentencia que permite iterar sobre una  lista, construir dinamicamente elementos html
+3) v-model  para enviar el modelo al backend
+
+### Pilas con la desestructuracion de un objeto
+
 
 # SPA
 Single Page Aplication
