@@ -26,6 +26,15 @@ Permite agilizar el desarrollo, el navegador toma las directivas y las transform
     this se necesita dentro de JS, no en HTML
 2) v-for   sentencia que permite iterar sobre una  lista, construir dinamicamente elementos html
 3) v-model  para enviar el modelo al backend
+vue maneja 2 directivas para 
+4) v-if  en funcion de un booleano contruye o no un elemento html
+ v-show  aparentemente hace lo mismo que el anterior
+
+ visualmente se comportan iguales, pero no hacen lo mismo
+
+la unica diferencia es que el v-show le aplica un style="display:none;" y el if construye  o no construye el elemento html
+
+
 
 ### Pilas con la desestructuracion de un objeto
 
@@ -38,3 +47,6 @@ Single Page Aplication
   en SPA solo la carga inicial es tardada
 
 COn SPA se mejora la experiencia de usuario
+
+
+   

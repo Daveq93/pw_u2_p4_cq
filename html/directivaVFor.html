@@ -13,7 +13,7 @@
         <section>
 
             <div id="myApp2">
-                <h4>Estudiantes UCE</h4>
+                <h4 >Estudiantes UCE</h4>
                 <input type="text" v-model="nombre" v-on:keypress.enter="agregarEstudiante2">
                                                                <!--El .enter controla directamente el enter-->
                 <h1>{{nombre}}</h1>
@@ -36,9 +36,10 @@
                         <span>{{nombre}}</span>
                         <blockquote>{{apellido}}</blockquote>
                     </li>-->
-                    <li v-for="(estudiante, index) in arreglo">
-                        <span>{{index}}--{{estudiante.nombre}}</span>
-                        <blockquote>{{estudiante.apellido}}</blockquote>
+                    <li v-for="({nombre,apellido}, index) in arreglo">
+                        <span>{{index}}--{{nombre}}</span>
+                        <blockquote v-if="apellido!==undefined">Apellido: {{apellido}}</blockquote>
+                        <blockquote v-show="apellido!==undefined">Apellido: {{apellido}}</blockquote>
                     </li>
                 </ul>
             </div>

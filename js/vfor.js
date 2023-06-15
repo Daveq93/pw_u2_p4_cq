@@ -31,7 +31,7 @@ const app = Vue.createApp({
                 console.log('Presiono enter')
                 const nuevoEstu = {
                     nombre: this.nombre,
-                    apellido: 'APELLIDO'
+                    
                 }
                 this.arreglo.unshift(nuevoEstu);
             } else {
@@ -43,7 +43,7 @@ const app = Vue.createApp({
             
             const nuevoEstu = {
                 nombre: this.nombre,
-                apellido: 'APELLIDO'
+                
             }
             this.arreglo.unshift(nuevoEstu);
             
